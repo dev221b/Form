@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+     <link rel="stylesheet" href="script.js">
+    <style>
+        :root{
+            background-color: darkgray;
+            text-align: center;
+            color: black;
+            
+        }
+        
+        h1 {
+            font-family:Geneva;
+            color: rgb(38, 49, 49);
+            padding-top: 0px;
+            font-weight: bold;
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            /* align-items: baseline; */ 
+            text-align:left;
+            font-size: 20px;
+        }
+        td{
+            padding: 10px;
+        }
+        ol{
+            margin-left: 500px;
+            margin-right: 500px;
+            font-family: Georgia;
+            text-align: left;
+        }
+        label{
+            
+            font-size: 20px;
+        }
+        img{
+            width: 200px;
+            height: 150px;
+            padding-top: 10px;
+            border-radius: 1000px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+   <img src="http://webtoolfeed.files.wordpress.com/2011/12/127291.png" alt="Our logo">
+   <h1>Form Submission</h1>
+   <span>Enter your personal info below</span>
+   <hr>
+   <br>
+   <div>
+    <label>Name : </label>
+    <input type="text" name="name" id="name" placeholder="Please enter your full name" size="30px" style="height: 25px;">
+</div>
+<br>
+<div>
+    <label>Gender : </label>
+    <input type="radio" name="gender">Female
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Others
+</div>
+<br>
+<div>
+    <label>Age : </label>
+    <input type="number" name="age" style="height: 25px; width: 50px;">
+</div>
+<br>
+<div>
+    <label>Birthday : </label>
+    <input type="date" name="birthday" style="height: 25px;">
+</div>
+<br>
+<div>
+    <label>Email : </label>
+    <input type="email" name="email" placeholder="xyz@gmail.com" size="30px" style="height: 25px;">
+</div>
+<br>
+<div>
+    <label for="qualification : ">Qualification : </label>
+    <select name="qualification" value="Select">
+        <option value="">--Choose an option--</option>
+        <option value="highschool">High School</option>
+        <option value="highersec">Higher Secondary</option>
+        <option value="undergrad">Under graduate</option>
+        <option value="postgrad">Post graduate</option>
+    </select>
+</div>
+<br>
+<br>
+<div>
+    <label >Skills : </label>
+    <br>
+    <br>
+    
+    <table class="table">
+        <tr>
+            <td><input type="checkbox" name="skill">Python</td>
+            <td><input type="checkbox" name="skill">Java</td>
+            <td><input type="checkbox" name="skill">C</td>
+        </tr>
+        
+        <tr>
+            <td><input type="checkbox" name="skill">HTML</td>
+            <td><input type="checkbox" name="skill">CSS</td>
+            <td><input type="checkbox" name="skill">JS</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="skill">Dart</td>
+            <td><input type="checkbox" name="skill">Node.js</td>
+            <td><input type="checkbox" name="skill">React</td>
+        </tr>
+    </table>
+</div>
+<br>
+<h3>Note :</h3>
+<ol>
+    <li>This form is only for registering for the entire event</li>
+    <br>
+    <li>Participating in the different sessions and competitions included in the event requires special registration</li>
+    <br>
+    <li>The event will be live for 36 hours starting from 25th February<br> 10.30pm till 27th 10.30am. It includes :</li>
+    <br>
+    <ul>
+        <li>Study and Career Guidance Sessions</li>
+        <li>Quizzes</li>
+        <li>Debates</li>
+        <li>Competitions</li>
+    </ul>
+    <br>
+    <li>Some events may be paid. You will be notified in advance if an event requires payment</li>
+    <br>
+    <li>We do not ask for any sensitive information from you. Please do not fall prey for fraud requests or messages</li>
+</ol>
+<br>
+<p><b>Disclaimer</b> : The details of this form are to be filled with your complete knowledge. Once submitted, this cannot be edited. </p>
+<p>
+    <label for="notif" style="font-size: 15px; font-weight: bold">Do you want to get notified of our future evnts?</label>
+    <input type="radio" name="skill"><b>Yes</b> 
+    <input type="radio" name="skill"><b>No</b>
+</p>
+    
+
+
+<div>
+    <input type="button" value="SUBMIT" style="font-weight:bold;background-color: black;color: darkgray;block-size: 40px;text-size-adjust: 20px;">
+</div>    
+
+</div>
+
+</body>
+</html>
